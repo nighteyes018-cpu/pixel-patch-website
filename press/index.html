@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pixel Patch: Press Kit</title>
+<meta name="description" content="Press kit for Pixel Patch, a cozy pixel-art farming game for iOS built solo. Fact sheet, boilerplate, screenshots, and trailer.">
+
+<meta property="og:title" content="Pixel Patch: Press Kit">
+<meta property="og:description" content="A cozy, pixel-art farming game for iOS built entirely solo. Fact sheet, screenshots, and trailer for press.">
+<meta property="og:image" content="https://pixelpatch.games/hero.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="../icon.png">
+<link rel="apple-touch-icon" href="../icon.png">
+<meta name="theme-color" content="#1a2b1a">
+
+<style>
+  :root {
+    --bg: #1a2b1a;
+    --card: #243516;
+    --card-border: #3c5322;
+    --text: #f1f8e9;
+    --text-dim: #cfe0b8;
+    --text-mute: #8fa87e;
+    --accent: #8bc34a;
+    --accent-yellow: #ffd54f;
+    --link: #9ad0f0;
+    --rule: #3c5322;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text-dim);
+    font-family: "Segoe UI", -apple-system, system-ui, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 56px 24px 90px; }
+
+  .idBlock {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    flex-wrap: wrap;
+    padding-bottom: 28px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .idBlock img.icon {
+    width: 84px; height: 84px;
+    border-radius: 20px;
+    border: 3px solid var(--accent);
+    image-rendering: pixelated;
+    flex-shrink: 0;
+  }
+  .logo { font-size: 40px; font-weight: 900; line-height: 1; letter-spacing: 0.5px; }
+  .logo .p1 { color: var(--accent); }
+  .logo .p2 { color: var(--accent-yellow); }
+  .idText .tagline {
+    color: var(--text); font-weight: 700; font-size: 14px; letter-spacing: 1px;
+    text-transform: uppercase; margin-top: 8px;
+  }
+  .kicker {
+    margin-left: auto;
+    background: var(--card);
+    border: 2px solid var(--accent);
+    color: var(--text);
+    font-weight: 800; font-size: 12px; letter-spacing: 0.5px;
+    padding: 7px 16px;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+
+  h1.pageTitle {
+    font-size: 13px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase;
+    color: var(--text-mute); margin: 28px 0 0;
+  }
+
+  h2 {
+    color: var(--accent);
+    font-size: 14px; font-weight: 800;
+    letter-spacing: 1.5px; text-transform: uppercase;
+    margin: 52px 0 18px;
+  }
+  h2:first-of-type { margin-top: 40px; }
+
+  .pitch {
+    font-size: 19px;
+    color: var(--text);
+    max-width: 640px;
+    margin-top: 6px;
+  }
+
+  .facts {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    row-gap: 10px;
+    column-gap: 18px;
+    font-size: 14.5px;
+  }
+  .facts dt { color: var(--text-mute); font-weight: 700; }
+  .facts dd { margin: 0; color: var(--text); font-variant-numeric: tabular-nums; }
+
+  .boiler {
+    background: var(--card);
+    border: 2px solid var(--card-border);
+    border-left: 4px solid var(--accent);
+    border-radius: 10px;
+    padding: 20px 22px;
+    font-size: 15px;
+    color: var(--text-dim);
+  }
+  .boiler .label {
+    display: block;
+    color: var(--accent-yellow);
+    font-weight: 800; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+  @media (max-width: 560px) { .features { grid-template-columns: 1fr; } }
+  .card {
+    background: var(--card);
+    border: 2px solid var(--card-border);
+    border-radius: 12px;
+    padding: 16px 18px;
+  }
+  .card .t { color: var(--accent-yellow); font-weight: 800; font-size: 14px; margin-bottom: 6px; }
+  .card .d { color: var(--text-dim); font-size: 13.5px; }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+  }
+  @media (max-width: 700px) { .gallery { grid-template-columns: repeat(2, 1fr); } }
+  .gallery figure { margin: 0; }
+  .gallery a { display: block; }
+  .gallery img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    border: 2px solid var(--card-border);
+    image-rendering: pixelated;
+  }
+  .gallery figcaption {
+    font-size: 11.5px;
+    color: var(--text-mute);
+    margin-top: 6px;
+    text-align: center;
+  }
+
+  .trailerWrap video {
+    width: 100%;
+    max-width: 320px;
+    display: block;
+    border-radius: 12px;
+    border: 2px solid var(--card-border);
+  }
+
+  .devnote {
+    font-size: 15px;
+    color: var(--text-dim);
+    max-width: 640px;
+  }
+  .devnote strong { color: var(--text); }
+
+  .contactBlock {
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+    font-size: 14.5px;
+  }
+  .contactBlock a { color: var(--link); text-decoration: none; }
+  .contactBlock a:hover { text-decoration: underline; }
+  .contactBlock .k { color: var(--text-mute); font-weight: 700; display: block; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 4px; }
+
+  .dl {
+    display: inline-block;
+    margin-top: 14px;
+    background: var(--card);
+    border: 2px solid var(--card-border);
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 13.5px;
+    padding: 9px 16px;
+    border-radius: 8px;
+  }
+  .dl:hover { border-color: var(--accent); }
+
+  footer {
+    margin-top: 64px;
+    padding-top: 20px;
+    border-top: 1px solid var(--rule);
+    text-align: center;
+    color: var(--text-mute);
+    font-size: 12px;
+  }
+  footer a { color: var(--link); text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="idBlock">
+    <img class="icon" src="assets/app_icon.png" alt="Pixel Patch icon">
+    <div class="idText">
+      <div class="logo"><span class="p1">PIXEL</span> <span class="p2">PATCH</span></div>
+      <div class="tagline">grow &middot; harvest &middot; sell &middot; repeat</div>
+    </div>
+    <div class="kicker">Press Kit</div>
+  </div>
+
+  <h1 class="pageTitle">Pixel Patch: Press Kit</h1>
+  <p class="pitch">A cozy, pixel-art farming game for iPhone, built entirely by one person. No ads, no in-app purchases, just a farm that grows in real time.</p>
+
+  <h2>Fact Sheet</h2>
+  <dl class="facts">
+    <dt>Developer</dt><dd>Crian Padayachee (solo)</dd>
+    <dt>Platform</dt><dd>iPhone (iOS)</dd>
+    <dt>Genre</dt><dd>Cozy farming / life sim</dd>
+    <dt>Price</dt><dd>Paid, one-time purchase. No ads, no IAP</dd>
+    <dt>Release</dt><dd>Submitted for Apple review, targeting late August 2026</dd>
+    <dt>Engine</dt><dd>Custom, hand-built HTML5/Canvas, wrapped for iOS</dd>
+    <dt>Language</dt><dd>English</dd>
+    <dt>Website</dt><dd><a href="https://pixelpatch.games" style="color:var(--link)">pixelpatch.games</a></dd>
+  </dl>
+
+  <h2>Boilerplate</h2>
+  <div class="boiler">
+    <span class="label">Copy &amp; paste</span>
+    Pixel Patch is a cozy, pixel-art farming game for iOS built entirely solo: every sprite hand-drawn, every sound effect synthesized in code, no external art or audio assets anywhere in the game. Plant, water, harvest, and sell at the market stand across 22 crops and 7 rarity tiers, discover rare crop mutations, build friendships with the market's NPCs, and grow a farm that keeps progressing even while you're away. No ads, no in-app purchases, no data collection. Just a farm.
+  </div>
+
+  <h2>Key Features</h2>
+  <div class="features">
+    <div class="card">
+      <div class="t">22 crops, 7 rarity tiers</div>
+      <div class="d">From everyday vegetables to rare mutations: Golden, Rainbow, Diamond, and beyond.</div>
+    </div>
+    <div class="card">
+      <div class="t">Fully hand-made</div>
+      <div class="d">Every sprite is hand-drawn pixel art and every sound is synthesized in code, with no stock art or audio anywhere in the game.</div>
+    </div>
+    <div class="card">
+      <div class="t">Your farm keeps growing</div>
+      <div class="d">Offline growth means crops progress even while you're away, so you can check in whenever you like.</div>
+    </div>
+    <div class="card">
+      <div class="t">A living village</div>
+      <div class="d">Three shopkeeper NPCs with their own personalities, dialogue, and a friendship system tied to daily requests.</div>
+    </div>
+    <div class="card">
+      <div class="t">No ads, no IAP, no data</div>
+      <div class="d">One-time purchase. No ads, no in-app purchases, and no data collection of any kind, ever.</div>
+    </div>
+    <div class="card">
+      <div class="t">Treasure &amp; seasonal events</div>
+      <div class="d">Hidden treasure digging, a 22-entry collection book, achievements, and rotating seasonal decor.</div>
+    </div>
+  </div>
+
+  <h2>Trailer</h2>
+  <div class="trailerWrap">
+    <video controls preload="metadata" poster="assets/screenshot_1_quests.png">
+      <source src="assets/trailer.mp4" type="video/mp4">
+    </video>
+    <a class="dl" href="assets/trailer.mp4" download>Download trailer (.mp4)</a>
+  </div>
+
+  <h2>Screenshots</h2>
+  <div class="gallery">
+    <figure><a href="assets/screenshot_1_quests.png" download><img src="assets/screenshot_1_quests.png" alt="Quest board with an achievement and story quests"></a><figcaption>Quest board</figcaption></figure>
+    <figure><a href="assets/screenshot_2.png" download><img src="assets/screenshot_2.png" alt="Farm with growing crops"></a><figcaption>The farm</figcaption></figure>
+    <figure><a href="assets/screenshot_3.png" download><img src="assets/screenshot_3.png" alt="Gameplay screenshot"></a><figcaption>Gameplay</figcaption></figure>
+    <figure><a href="assets/screenshot_4.png" download><img src="assets/screenshot_4.png" alt="Gameplay screenshot"></a><figcaption>Gameplay</figcaption></figure>
+    <figure><a href="assets/screenshot_5.png" download><img src="assets/screenshot_5.png" alt="Gameplay screenshot"></a><figcaption>Gameplay</figcaption></figure>
+  </div>
+
+  <h2>About the Developer</h2>
+  <p class="devnote">
+    Pixel Patch is built and maintained by <strong>Crian Padayachee</strong>, a single solo developer working nights and weekends. Every line of code, every pixel, and every sound effect is original work: no asset packs, no outsourcing, no team. This is a first solo release, made because a cozy game that respects your time and never asks for money after the initial purchase felt worth building.
+  </p>
+
+  <h2>Contact &amp; Assets</h2>
+  <div class="contactBlock">
+    <div><span class="k">Press contact</span><a href="mailto:hello@pixelpatch.games">hello@pixelpatch.games</a></div>
+    <div><span class="k">Website</span><a href="https://pixelpatch.games">pixelpatch.games</a></div>
+  </div>
+  <p class="devnote" style="margin-top:16px;">
+    Every image and the trailer above can be downloaded directly. Happy to send additional footage or answer questions directly. A free App Store promo code will be ready to send once the app is approved and live.
+  </p>
+
+  <footer>
+    <a href="https://pixelpatch.games">&larr; Back to Pixel Patch</a><br>
+    &copy; 2026 Pixel Patch. Made solo.
+  </footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+PIXEL PATCH: FACT SHEET & BOILERPLATE
+
+Developer: Crian Padayachee (solo)
+Platform: iPhone (iOS)
+Genre: Cozy farming / life sim
+Price: Paid, one-time purchase. No ads, no in-app purchases
+Release: Submitted for Apple review, targeting late August 2026
+Engine: Custom, hand-built HTML5/Canvas, wrapped for iOS
+Language: English
+Website: https://pixelpatch.games
+Press contact: hello@pixelpatch.games
+
+BOILERPLATE (copy/paste into articles)
+
+Pixel Patch is a cozy, pixel-art farming game for iOS built entirely solo:
+every sprite hand-drawn, every sound effect synthesized in code, no external
+art or audio assets anywhere in the game. Plant, water, harvest, and sell at
+the market stand across 22 crops and 7 rarity tiers, discover rare crop
+mutations, build friendships with the market's NPCs, and grow a farm that
+keeps progressing even while you're away. No ads, no in-app purchases, no
+data collection. Just a farm.
+
+SHORT PITCH (one-liner)
+
+A cozy, pixel-art farming game built entirely solo. No ads, no in-app
+purchases, just a farm that grows in real time.
+
+KEY FEATURES
+
+- 22 crops across 7 rarity tiers, with rare mutations (Golden, Rainbow,
+  Diamond, and beyond)
+- Every sprite hand-drawn, every sound synthesized in code, with no stock
+  assets anywhere
+- Offline growth: crops progress even while the app is closed
+- Three shopkeeper NPCs with their own personalities and a friendship system
+- Treasure digging, a 22-entry collection book, and achievements
+- No ads, no in-app purchases, no data collection
+
+ABOUT THE DEVELOPER
+
+Pixel Patch is built and maintained by Crian Padayachee, a single solo
+developer working nights and weekends. Every line of code, every pixel, and
+every sound effect is original work: no asset packs, no outsourcing, no
+team. This is a first solo release.
+
+ASSETS INCLUDED IN THIS FOLDER
+
+- app_icon.png: app icon
+- screenshot_1_quests.png through screenshot_5.png: real device screenshots
+- trailer.mp4: 30-second gameplay trailer (1080x1920, with audio)
