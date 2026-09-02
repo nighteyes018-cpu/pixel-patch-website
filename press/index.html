@@ -194,6 +194,22 @@
   }
   .dl:hover { border-color: var(--accent); }
 
+  .cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    margin-top: 22px;
+    background: var(--accent);
+    color: #16210c;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 14.5px;
+    padding: 12px 22px;
+    border-radius: 10px;
+  }
+  .cta:hover { background: var(--accent-yellow); }
+  .ctaNote { font-size: 12.5px; color: var(--text-mute); margin-top: 10px; }
+
   footer {
     margin-top: 64px;
     padding-top: 20px;
@@ -220,13 +236,16 @@
   <h1 class="pageTitle">Pixel Patch: Press Kit</h1>
   <p class="pitch">A cozy, pixel-art farming game for iPhone, built entirely by one person. No ads, no in-app purchases, just a farm that grows in real time.</p>
 
+  <a class="cta" id="reviewCopyBtn" href="#">✉️ Request a review copy</a>
+  <p class="ctaNote">Opens your email app, addressed to us. Just add your name and channel.</p>
+
   <h2>Fact Sheet</h2>
   <dl class="facts">
     <dt>Developer</dt><dd>Crian Padayachee (solo)</dd>
     <dt>Platform</dt><dd>iPhone (iOS)</dd>
     <dt>Genre</dt><dd>Cozy farming / life sim</dd>
     <dt>Price</dt><dd>Paid, one-time purchase. No ads, no IAP</dd>
-    <dt>Release</dt><dd>Submitted for Apple review, targeting late August 2026</dd>
+    <dt>Release</dt><dd>September 7, 2026</dd>
     <dt>Engine</dt><dd>Custom, hand-built HTML5/Canvas, wrapped for iOS</dd>
     <dt>Language</dt><dd>English</dd>
     <dt>Website</dt><dd><a href="https://pixelpatch.games" style="color:var(--link)">pixelpatch.games</a></dd>
@@ -294,7 +313,7 @@
     <div><span class="k">Website</span><a href="https://pixelpatch.games">pixelpatch.games</a></div>
   </div>
   <p class="devnote" style="margin-top:16px;">
-    Every image and the trailer above can be downloaded directly. Happy to send additional footage or answer questions directly. A free App Store promo code will be ready to send once the app is approved and live.
+    Every image and the trailer above can be downloaded directly. Happy to send additional footage or answer questions directly, and a free App Store promo code is available on request using the button above.
   </p>
 
   <footer>
@@ -303,5 +322,25 @@
   </footer>
 
 </div>
+<script>
+  (function () {
+    var subject = 'Pixel Patch review copy request';
+    var body = [
+      'Hi,',
+      '',
+      "I'd like to request a review copy of Pixel Patch.",
+      '',
+      'Name: ',
+      'Channel / handle: ',
+      'Link to channel or page: ',
+      '',
+      'Thanks!'
+    ].join('\n');
+    var href = 'mailto:hello@pixelpatch.games'
+      + '?subject=' + encodeURIComponent(subject)
+      + '&body=' + encodeURIComponent(body);
+    document.getElementById('reviewCopyBtn').setAttribute('href', href);
+  })();
+</script>
 </body>
 </html>
