@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pixel Patch: a cozy pixel-art farming game</title>
-<meta name="description" content="Pixel Patch is a cozy, pixel-art farming game for iOS. Grow, harvest, sell, repeat. No ads, no in-app purchases, no data collection.">
+<meta name="description" content="Pixel Patch is a cozy, pixel-art farming game for iOS, out now. Grow, harvest, sell, repeat. No ads, no in-app purchases, no data collection.">
 
 <meta property="og:title" content="Pixel Patch">
-<meta property="og:description" content="A cozy, pixel-art farming game for iOS. Grow, harvest, sell, repeat.">
+<meta property="og:description" content="A cozy, pixel-art farming game for iOS, out now. Grow, harvest, sell, repeat.">
 <meta property="og:image" content="https://pixelpatch.games/hero.png">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
@@ -82,6 +82,40 @@
     padding: 8px 18px;
     border-radius: 999px;
   }
+  .downloadRow {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .downloadRow a.badge {
+    display: block;
+    line-height: 0;
+  }
+  .downloadRow a.badge img {
+    height: 48px;
+    width: auto;
+    display: block;
+  }
+  .downloadRow .qr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+  .downloadRow .qr img {
+    width: 56px; height: 56px;
+    border-radius: 6px;
+    background: #fff;
+    padding: 3px;
+  }
+  .downloadRow .qr span {
+    color: #cfe0b8;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
 
   /* ---- body ---- */
   h2 {
@@ -154,7 +188,16 @@
     <img class="mascot" src="icon.png" alt="Pixel Patch">
     <div class="logo"><span class="p1">PIXEL</span><span class="p2">PATCH</span></div>
     <div class="tagline">grow · harvest · sell · repeat</div>
-    <div class="pill">📅 Launching September 7 on iOS</div>
+    <div class="pill">✅ Available now on iOS</div>
+    <div class="downloadRow">
+      <a class="badge" href="https://apps.apple.com/app/id6801718756" target="_blank" rel="noopener" aria-label="Download on the App Store">
+        <img src="assets/app-store-badge.svg" alt="Download on the App Store">
+      </a>
+      <div class="qr">
+        <img src="assets/qr-code.png" alt="QR code linking to the Pixel Patch App Store page">
+        <span>Scan to download</span>
+      </div>
+    </div>
   </div>
 </div>
 
