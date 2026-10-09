@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pixel Patch：媒體資料</title>
+<meta name="description" content="Pixel Patch 媒體資料：一人獨立開發、在高雄製作的 iOS 像素風療癒種田遊戲。基本資料、新聞稿用介紹、繁體中文截圖、預告片與主視覺下載。">
+
+<meta property="og:title" content="Pixel Patch：媒體資料">
+<meta property="og:description" content="一人獨立開發、在高雄製作的 iOS 像素風療癒種田遊戲。繁體中文截圖、預告片與主視覺。">
+<meta property="og:image" content="https://pixelpatch.games/press/assets/key_art_3840x1646.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_TW">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="alternate" hreflang="en" href="https://pixelpatch.games/press/">
+<link rel="alternate" hreflang="zh-Hant" href="https://pixelpatch.games/zh-tw/press/">
+<link rel="alternate" hreflang="x-default" href="https://pixelpatch.games/press/">
+
+<link rel="icon" href="/icon.png">
+<link rel="apple-touch-icon" href="/icon.png">
+<meta name="theme-color" content="#1a2b1a">
+
+<style>
+  :root {
+    --bg: #1a2b1a;
+    --card: #243516;
+    --card-border: #3c5322;
+    --text: #f1f8e9;
+    --text-dim: #cfe0b8;
+    --text-mute: #8fa87e;
+    --accent: #8bc34a;
+    --accent-yellow: #ffd54f;
+    --link: #9ad0f0;
+    --rule: #3c5322;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text-dim);
+    font-family: "Segoe UI", -apple-system, system-ui, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 56px 24px 90px; }
+
+  .idBlock {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    flex-wrap: wrap;
+    padding-bottom: 28px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .idBlock img.icon {
+    width: 84px; height: 84px;
+    border-radius: 20px;
+    border: 3px solid var(--accent);
+    image-rendering: pixelated;
+    flex-shrink: 0;
+  }
+  .logo { font-size: 40px; font-weight: 900; line-height: 1; letter-spacing: 0.5px; }
+  .logo .p1 { color: var(--accent); }
+  .logo .p2 { color: var(--accent-yellow); }
+  .idText .tagline {
+    color: var(--text); font-weight: 700; font-size: 14px; letter-spacing: 1px;
+    text-transform: uppercase; margin-top: 8px;
+  }
+  .kicker {
+    margin-left: auto;
+    background: var(--card);
+    border: 2px solid var(--accent);
+    color: var(--text);
+    font-weight: 800; font-size: 12px; letter-spacing: 0.5px;
+    padding: 7px 16px;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+
+  h1.pageTitle {
+    font-size: 13px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase;
+    color: var(--text-mute); margin: 28px 0 0;
+  }
+
+  h2 {
+    color: var(--accent);
+    font-size: 14px; font-weight: 800;
+    letter-spacing: 1.5px; text-transform: uppercase;
+    margin: 52px 0 18px;
+  }
+  h2:first-of-type { margin-top: 40px; }
+
+  .pitch {
+    font-size: 19px;
+    color: var(--text);
+    max-width: 640px;
+    margin-top: 6px;
+  }
+
+  .facts {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    row-gap: 10px;
+    column-gap: 18px;
+    font-size: 14.5px;
+  }
+  .facts dt { color: var(--text-mute); font-weight: 700; }
+  .facts dd { margin: 0; color: var(--text); font-variant-numeric: tabular-nums; }
+
+  .boiler {
+    background: var(--card);
+    border: 2px solid var(--card-border);
+    border-left: 4px solid var(--accent);
+    border-radius: 10px;
+    padding: 20px 22px;
+    font-size: 15px;
+    color: var(--text-dim);
+  }
+  .boiler + .boiler { margin-top: 12px; }
+  .boiler .label {
+    display: block;
+    color: var(--accent-yellow);
+    font-weight: 800; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+  @media (max-width: 560px) { .features { grid-template-columns: 1fr; } }
+  .card {
+    background: var(--card);
+    border: 2px solid var(--card-border);
+    border-radius: 12px;
+    padding: 16px 18px;
+  }
+  .card .t { color: var(--accent-yellow); font-weight: 800; font-size: 14px; margin-bottom: 6px; }
+  .card .d { color: var(--text-dim); font-size: 13.5px; }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+  }
+  @media (max-width: 700px) { .gallery { grid-template-columns: repeat(2, 1fr); } }
+  .gallery figure { margin: 0; }
+  .gallery a { display: block; }
+  .gallery img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    border: 2px solid var(--card-border);
+    image-rendering: pixelated;
+  }
+  .gallery figcaption {
+    font-size: 11.5px;
+    color: var(--text-mute);
+    margin-top: 6px;
+    text-align: center;
+  }
+
+  .trailerWrap video {
+    width: 100%;
+    max-width: 320px;
+    display: block;
+    border-radius: 12px;
+    border: 2px solid var(--card-border);
+  }
+
+  .devnote {
+    font-size: 15px;
+    color: var(--text-dim);
+    max-width: 640px;
+  }
+  .devnote strong { color: var(--text); }
+
+  .contactBlock {
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+    font-size: 14.5px;
+  }
+  .contactBlock a { color: var(--link); text-decoration: none; }
+  .contactBlock a:hover { text-decoration: underline; }
+  .contactBlock .k { color: var(--text-mute); font-weight: 700; display: block; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 4px; }
+
+  .dl {
+    display: inline-block;
+    margin-top: 14px;
+    background: var(--card);
+    border: 2px solid var(--card-border);
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 13.5px;
+    padding: 9px 16px;
+    border-radius: 8px;
+  }
+  .dl:hover { border-color: var(--accent); }
+
+  .cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    margin-top: 22px;
+    background: var(--accent);
+    color: #16210c;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 14.5px;
+    padding: 12px 22px;
+    border-radius: 10px;
+  }
+  .cta:hover { background: var(--accent-yellow); }
+  .ctaNote { font-size: 12.5px; color: var(--text-mute); margin-top: 10px; }
+
+  footer {
+    margin-top: 64px;
+    padding-top: 20px;
+    border-top: 1px solid var(--rule);
+    text-align: center;
+    color: var(--text-mute);
+    font-size: 12px;
+  }
+  footer a { color: var(--link); text-decoration: none; }
+
+  /* ---- language toggle (top right) ---- */
+  .lang {
+    position: absolute; top: 16px; right: 18px; z-index: 3;
+    display: flex; overflow: hidden;
+    background: rgba(13,21,8,0.72);
+    border: 2px solid #3c5322; border-radius: 999px;
+  }
+  .lang a { color: #cfe0b8; text-decoration: none; font-weight: 800; font-size: 13px; line-height: 1; padding: 7px 13px; }
+  .lang a.on { background: #8bc34a; color: #13200d; }
+  .lang a:not(.on):hover { color: #f1f8e9; }
+
+  /* Chinese type: PingFang TC on Apple devices, JhengHei on Windows */
+  html, body { font-family: -apple-system, "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", "Segoe UI", sans-serif; }
+  .logo { font-family: "Segoe UI", -apple-system, system-ui, sans-serif; }
+  .idText .tagline { letter-spacing: 3px; }
+  .facts { grid-template-columns: 110px 1fr; }
+  .gallery { grid-template-columns: repeat(6, 1fr); }
+  @media (max-width: 700px) { .gallery { grid-template-columns: repeat(3, 1fr); } }
+  .keyart img { width: 100%; display: block; border-radius: 12px; border: 2px solid var(--card-border); image-rendering: pixelated; }
+  .trailerWrap .dl { margin-right: 8px; }
+  .angle { margin: 0; padding-left: 20px; font-size: 15px; color: var(--text-dim); }
+  .angle li { margin-bottom: 8px; }
+  .angle strong { color: var(--text); }
+</style>
+</head>
+<body>
+<nav class="lang" aria-label="語言"><a href="/press/" hreflang="en" lang="en">EN</a><a class="on" href="/zh-tw/press/" hreflang="zh-Hant">中文</a></nav>
+<div class="wrap">
+
+  <div class="idBlock">
+    <img class="icon" src="/press/assets/app_icon.png" alt="Pixel Patch 圖示">
+    <div class="idText">
+      <div class="logo"><span class="p1">PIXEL</span> <span class="p2">PATCH</span></div>
+      <div class="tagline">種植 &middot; 收穫 &middot; 販售 &middot; 重複</div>
+    </div>
+    <div class="kicker">媒體資料</div>
+  </div>
+
+  <h1 class="pageTitle">Pixel Patch：媒體資料</h1>
+  <p class="pitch">一款由一個人在高雄做出來的 iPhone 像素風療癒種田遊戲。沒有廣告、沒有內購，只有一座跟著真實時間成長的農場。</p>
+
+  <a class="cta" id="reviewCopyBtn" href="#">✉️ 申請評測用兌換碼</a>
+  <p class="ctaNote">會開啟你的郵件 App 並自動填好收件人，只要補上你的名字和媒體名稱就可以寄出。</p>
+
+  <a href="https://apps.apple.com/tw/app/id6801718756" target="_blank" rel="noopener" style="display:inline-block; margin-top:14px; line-height:0;">
+    <img src="/assets/app-store-badge.svg" alt="在 App Store 下載" style="height:44px; width:auto;">
+  </a>
+
+  <h2>基本資料</h2>
+  <dl class="facts">
+    <dt>開發者</dt><dd>Crian Padayachee（一人獨立開發，高雄）</dd>
+    <dt>平台</dt><dd>iPhone（iOS）</dd>
+    <dt>類型</dt><dd>療癒種田／生活模擬</dd>
+    <dt>價格</dt><dd>付費買斷，沒有廣告、沒有內購</dd>
+    <dt>上架日期</dt><dd>2026 年 9 月 7 日上架</dd>
+    <dt>引擎</dt><dd>自行開發的 HTML5／Canvas 引擎，包裝成 iOS App</dd>
+    <dt>語言</dt><dd>英文、繁體中文（1.3 版起）</dd>
+    <dt>網站</dt><dd><a href="https://pixelpatch.games/zh-tw/" style="color:var(--link)">pixelpatch.games</a></dd>
+  </dl>
+
+  <h2>台灣在地亮點</h2>
+  <ul class="angle">
+    <li><strong>在高雄一個人做出來的遊戲。</strong>開發者是住在高雄的南非人，在台灣生活了十七年。</li>
+    <li><strong>1.3 版起全面支援繁體中文。</strong>所有選單、商店、任務與角色對話都已翻譯，並經母語人士審閱。作物、道具與角色名稱維持英文。</li>
+    <li><strong>標題畫面就是高雄鄉間。</strong>紅磚老厝、檳榔樹、田寮月世界的泥岩山、稻田和一整片向日葵，還會跟著真實時間從白天變成夜晚。</li>
+    <li><strong>農場旁邊也有稻田。</strong>白天還會有白鷺鷥在水田裡散步。</li>
+  </ul>
+
+  <h2>媒體報導</h2>
+  <div class="boiler">
+    <span class="label">P&iacute;lula de Pixel（巴西）&middot; 2026 年 9 月 26 日</span>
+    巴西遊戲網站 P&iacute;lula de Pixel 將 Pixel Patch 放上首頁，形容它是一款「用心製作、沒有廣告」的療癒種田遊戲：<a href="https://piluladepixel.com.br/pixel-patch-cozy-game-fazenda/" target="_blank" rel="noopener" lang="pt-BR" style="color:var(--link)">Pixel Patch: O Cozy Game de Fazenda Feito Com Amor e Sem An&uacute;ncios</a>（葡萄牙文）
+  </div>
+  <div class="boiler">
+    <span class="label">MadFox Games &middot; 2026 年 9 月 21 日</span>
+    MadFox Games 在 2026 年 iPhone 與 Android 療癒獨立種田遊戲精選中，把 Pixel Patch 列為第一款推薦：<a href="https://madfox.dev/indie_en/cozy-indie-farm-games-iphone-android" target="_blank" rel="noopener" lang="en" style="color:var(--link)">Cozy Indie Farm Games for iPhone and Android in 2026</a>（英文）
+  </div>
+
+  <h2>新聞稿用介紹</h2>
+  <div class="boiler">
+    <span class="label">可直接複製使用</span>
+    Pixel Patch 是一款由一人獨立開發、在高雄製作的 iOS 像素風療癒種田遊戲：所有圖像都是手繪的像素圖，所有音效都用程式碼合成，遊戲裡沒有使用任何外部美術或音效素材。玩家可以在 22 種作物、7 種稀有度之間播種、澆水、收成，再拿到市集攤位販售；還能發現稀有的突變作物、和市集的店主們培養友誼，就算離開遊戲，農場也會繼續成長。1.3 版起全面支援繁體中文，標題畫面也換成了高雄鄉間的風景。沒有廣告、沒有內購，也不收集任何資料。就只是一座農場。
+  </div>
+
+  <h2>遊戲特色</h2>
+  <div class="features">
+    <div class="card">
+      <div class="t">22 種作物、7 種稀有度</div>
+      <div class="d">從日常蔬菜到稀有的突變作物：黃金、彩虹、鑽石，還有更多。</div>
+    </div>
+    <div class="card">
+      <div class="t">全部親手打造</div>
+      <div class="d">每一張圖都是手繪的像素圖，每一個聲音都是用程式碼合成的，遊戲裡沒有任何現成的圖庫或音效素材。</div>
+    </div>
+    <div class="card">
+      <div class="t">離開遊戲，農場也會長大</div>
+      <div class="d">就算沒有打開遊戲，作物也會繼續長大，想到的時候再回來看看就好。</div>
+    </div>
+    <div class="card">
+      <div class="t">有人情味的小市集</div>
+      <div class="d">三位個性鮮明的店主，各有自己的對話，還有和每日委託連動的友誼系統。</div>
+    </div>
+    <div class="card">
+      <div class="t">沒有廣告、沒有內購、不收集資料</div>
+      <div class="d">一次買斷。沒有廣告、沒有內購，也完全不收集任何個人資料。</div>
+    </div>
+    <div class="card">
+      <div class="t">挖寶與季節活動</div>
+      <div class="d">隱藏的挖寶玩法、22 格的收藏圖鑑、成就，還有隨季節輪替的裝飾。</div>
+    </div>
+  </div>
+
+  <h2>主視覺</h2>
+  <div class="keyart">
+    <a href="/press/assets/key_art_3840x1646.png" download><img src="/press/assets/key_art_3840x1646.png" alt="Pixel Patch 主視覺：黃昏的高雄鄉間"></a>
+    <a class="dl" href="/press/assets/key_art_3840x1646.png" download>下載主視覺（3840×1646 PNG）</a>
+  </div>
+
+  <h2>預告片</h2>
+  <div class="trailerWrap">
+    <video controls preload="metadata" poster="/press/assets/zh/screenshot_1.png">
+      <source src="/press/assets/zh/trailer_zh.mp4" type="video/mp4">
+    </video>
+    <a class="dl" href="/press/assets/zh/trailer_zh.mp4" download>下載繁體中文預告片（.mp4，20 秒）</a>
+    <a class="dl" href="/press/assets/trailer.mp4" download>英文預告片（.mp4，30 秒）</a>
+  </div>
+
+  <h2>遊戲截圖</h2>
+  <div class="gallery">
+    <figure><a href="/press/assets/zh/screenshot_1.png" download><img src="/press/assets/zh/screenshot_1.png" alt="高雄鄉間的標題畫面"></a><figcaption>標題畫面</figcaption></figure>
+    <figure><a href="/press/assets/zh/screenshot_2.png" download><img src="/press/assets/zh/screenshot_2.png" alt="種滿作物的農場"></a><figcaption>農場</figcaption></figure>
+    <figure><a href="/press/assets/zh/screenshot_3.png" download><img src="/press/assets/zh/screenshot_3.png" alt="稀有的黃金突變作物"></a><figcaption>突變作物</figcaption></figure>
+    <figure><a href="/press/assets/zh/screenshot_4.png" download><img src="/press/assets/zh/screenshot_4.png" alt="三位店主的任務佈告欄"></a><figcaption>任務佈告欄</figcaption></figure>
+    <figure><a href="/press/assets/zh/screenshot_5.png" download><img src="/press/assets/zh/screenshot_5.png" alt="和 Steena 聊天"></a><figcaption>店主對話</figcaption></figure>
+    <figure><a href="/press/assets/zh/screenshot_6.png" download><img src="/press/assets/zh/screenshot_6.png" alt="Sprout 的種子攤"></a><figcaption>種子攤</figcaption></figure>
+  </div>
+
+  <h2>關於開發者</h2>
+  <p class="devnote">Pixel Patch 由 <strong>Crian Padayachee</strong> 一人開發與維護。他是住在高雄的南非人，在台灣生活了十七年，利用晚上和週末的時間製作這款遊戲。每一行程式、每一個像素、每一個音效都是原創：沒有素材包、沒有外包，也沒有團隊。這是他的第一款獨立遊戲。他想做的，是一款尊重玩家時間、買了之後就不會再跟你要錢的療癒遊戲。</p>
+
+  <h2>聯絡方式與素材</h2>
+  <div class="contactBlock">
+    <div><span class="k">媒體聯絡</span><a href="mailto:hello@pixelpatch.games">hello@pixelpatch.games</a></div>
+    <div><span class="k">網站</span><a href="https://pixelpatch.games/zh-tw/">pixelpatch.games</a></div>
+  </div>
+  <p class="devnote" style="margin-top:16px;">上面的所有圖片和預告片都可以直接下載。如果需要更多影片素材或有任何問題，歡迎直接來信；也可以用上方的按鈕申請免費的 App Store 評測用兌換碼。中文或英文來信都可以。</p>
+
+  <footer>
+    <a href="/zh-tw/">&larr; 回到 Pixel Patch</a><br>
+    &copy; 2026 Pixel Patch・一人獨立製作
+  </footer>
+
+</div>
+<script>
+  (function () {
+    var subject = 'Pixel Patch 評測用兌換碼申請';
+    var body = [
+      '您好，',
+      '',
+      '我想申請 Pixel Patch 的評測用兌換碼。',
+      '',
+      '姓名：',
+      '媒體／頻道名稱：',
+      '網站或頻道連結：',
+      '',
+      '謝謝！'
+    ].join('\n');
+    var href = 'mailto:hello@pixelpatch.games'
+      + '?subject=' + encodeURIComponent(subject)
+      + '&body=' + encodeURIComponent(body);
+    document.getElementById('reviewCopyBtn').setAttribute('href', href);
+  })();
+</script>
+</body>
+</html>

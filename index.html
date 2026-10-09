@@ -12,6 +12,10 @@
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
 
+<link rel="alternate" hreflang="en" href="https://pixelpatch.games/">
+<link rel="alternate" hreflang="zh-Hant" href="https://pixelpatch.games/zh-tw/">
+<link rel="alternate" hreflang="x-default" href="https://pixelpatch.games/">
+
 <link rel="icon" href="icon.png">
 <link rel="apple-touch-icon" href="icon.png">
 <meta name="theme-color" content="#1a2b1a">
@@ -178,11 +182,54 @@
   footer a { color: #9ad0f0; text-decoration: none; }
   footer .links { margin-bottom: 8px; }
   footer .links a { margin: 0 8px; }
+
+  /* ---- language toggle (top right of the hero) ---- */
+  .lang {
+    position: absolute; top: 14px; right: 16px; z-index: 3;
+    display: flex; overflow: hidden;
+    background: rgba(13,21,8,0.72);
+    border: 2px solid #3c5322; border-radius: 999px;
+  }
+  .lang a {
+    color: #cfe0b8; text-decoration: none;
+    font-weight: 800; font-size: 13px; line-height: 1;
+    padding: 7px 13px;
+  }
+  .lang a.on { background: #8bc34a; color: #13200d; }
+  .lang a:not(.on):hover { color: #f1f8e9; }
+
+  /* a one-time note for visitors whose browser is set to Chinese */
+  #zhHint {
+    display: flex; align-items: center; justify-content: center; gap: 12px;
+    background: #8bc34a; color: #13200d;
+    font-family: -apple-system, "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+    font-weight: 700; font-size: 14px; padding: 9px 14px;
+  }
+  #zhHint[hidden] { display: none; }
+  #zhHint a { color: #13200d; font-weight: 900; }
+  #zhHint button { background: none; border: 0; color: #13200d; font-size: 18px; line-height: 1; cursor: pointer; padding: 0 4px; }
 </style>
 </head>
 <body>
+<div id="zhHint" hidden lang="zh-Hant">本網站有繁體中文版 <a href="/zh-tw/">前往中文版 →</a><button type="button" aria-label="關閉">×</button></div>
+<script>
+  // shown once to Chinese-language browsers; no automatic redirect
+  (function () {
+    var el = document.getElementById('zhHint');
+    var zh = /^zh/i.test((navigator.languages && navigator.languages[0]) || navigator.language || '');   // Chinese-first browsers only
+    var seen = false;
+    try { seen = localStorage.getItem('pp.zhHint') === '1'; } catch (e) {}
+    if (zh && !seen) el.hidden = false;
+    el.querySelector('button').addEventListener('click', function () {
+      el.hidden = true;
+      try { localStorage.setItem('pp.zhHint', '1'); } catch (e) {}
+    });
+  })();
+</script>
+
 
 <div class="hero">
+  <nav class="lang" aria-label="Language"><a class="on" href="/" hreflang="en">EN</a><a href="/zh-tw/" hreflang="zh-Hant" lang="zh-Hant">中文</a></nav>
   <img class="heroBgImg" src="hero.png" alt="">
   <div class="heroContent">
     <img class="mascot" src="icon.png" alt="Pixel Patch">

@@ -1,13 +1,14 @@
 PIXEL PATCH: FACT SHEET & BOILERPLATE
 
-Developer: Crian Padayachee (solo)
+Developer: Crian Padayachee (solo, based in Kaohsiung, Taiwan)
 Platform: iPhone (iOS)
 Genre: Cozy farming / life sim
 Price: Paid, one-time purchase. No ads, no in-app purchases
-Release: Submitted for Apple review, targeting late August 2026
+Release: Live on the App Store since September 7, 2026
 Engine: Custom, hand-built HTML5/Canvas, wrapped for iOS
-Language: English
+Languages: English, Traditional Chinese (from version 1.3)
 Website: https://pixelpatch.games
+Press kit: https://pixelpatch.games/press/ (Chinese: https://pixelpatch.games/zh-tw/press/)
 Press contact: hello@pixelpatch.games
 
 BOILERPLATE (copy/paste into articles)
@@ -35,6 +36,8 @@ KEY FEATURES
 - Three shopkeeper NPCs with their own personalities and a friendship system
 - Treasure digging, a 22-entry collection book, and achievements
 - No ads, no in-app purchases, no data collection
+- From version 1.3: full Traditional Chinese, and a title screen and farm
+  inspired by the Kaohsiung countryside where the game is made
 
 ABOUT THE DEVELOPER
 
@@ -43,8 +46,12 @@ developer working nights and weekends. Every line of code, every pixel, and
 every sound effect is original work: no asset packs, no outsourcing, no
 team. This is a first solo release.
 
-ASSETS INCLUDED IN THIS FOLDER
+ASSETS ON THE PRESS PAGE
 
 - app_icon.png: app icon
-- screenshot_1_quests.png through screenshot_5.png: real device screenshots
+- key_art_3840x1646.png: key art (the Kaohsiung countryside at dusk)
+- screenshot_1_quests.png through screenshot_5.png: English screenshots
 - trailer.mp4: 30-second gameplay trailer (1080x1920, with audio)
+- zh/screenshot_1.png through zh/screenshot_6.png: Traditional Chinese
+  screenshots
+- zh/trailer_zh.mp4: 20-second Traditional Chinese trailer (886x1920)

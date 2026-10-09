@@ -12,6 +12,10 @@
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
 
+<link rel="alternate" hreflang="en" href="https://pixelpatch.games/changelog/">
+<link rel="alternate" hreflang="zh-Hant" href="https://pixelpatch.games/zh-tw/changelog/">
+<link rel="alternate" hreflang="x-default" href="https://pixelpatch.games/changelog/">
+
 <link rel="icon" href="../icon.png">
 <link rel="apple-touch-icon" href="../icon.png">
 <meta name="theme-color" content="#1a2b1a">
@@ -133,9 +137,21 @@
     font-size: 12px;
   }
   footer a { color: var(--link); text-decoration: none; }
+
+  /* ---- language toggle (top right) ---- */
+  .lang {
+    position: absolute; top: 16px; right: 18px; z-index: 3;
+    display: flex; overflow: hidden;
+    background: rgba(13,21,8,0.72);
+    border: 2px solid #3c5322; border-radius: 999px;
+  }
+  .lang a { color: #cfe0b8; text-decoration: none; font-weight: 800; font-size: 13px; line-height: 1; padding: 7px 13px; }
+  .lang a.on { background: #8bc34a; color: #13200d; }
+  .lang a:not(.on):hover { color: #f1f8e9; }
 </style>
 </head>
 <body>
+<nav class="lang" aria-label="Language"><a class="on" href="/changelog/" hreflang="en">EN</a><a href="/zh-tw/changelog/" hreflang="zh-Hant" lang="zh-Hant">中文</a></nav>
 <div class="wrap">
 
   <div class="idBlock">
